@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <ul>
+                <li class="title">Question Game !</li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <p class="question"></p>
+
+            <form class="formOfButtons">
+                <ul class="pog">
+                    <li><input type="button" value="Answer 1" class="btn1" id="answerBtn"></li>
+                    <li><input type="button" value="Answer 2" class="btn2" id="answerBtn"></li>
+                    <li><input type="button" value="Answer 3" class="btn3" id="answerBtn"></li>
+ 
+                </ul>
+                <input type="button" value="Restart" class="btn4" id="restartBtn">
+                <input type="button" value="Next" class="btn5" id="restartBtn">
+            </form>
+
+            <form>
+                <input type="button" value="Answer 1" class="categoryOne" id="categoryBtn" onclick="playGameOne()">
+                <input type="button" value="Answer 2" class="categoryTwo" id="categoryBtn" onclick="playGameTwo()">
+                <input type="button" value="Answer 3" class="categoryThree" id="categoryBtn" onclick="playGameThree()"> 
+            </form>
+            <p class="attempts">Attempts remaining : <span id="attemptsLeft">5</span></p>
+            <p class="score">Score : <span id="scoreNumber"> 0</span></p>
+        </div>
+        
+        <script src="app.js" async defer></script>
+    </body>
+</html>
