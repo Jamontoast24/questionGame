@@ -140,17 +140,6 @@ class QuestioneGame {
                 }
             }
 
-            const stopGame = () => {
-                if(currentQuestion == questionDisplay.length - 1) {
-
-                    answerBtnTrue.disabled = true
-                    answerBtnFalseOne.disabled = true
-                    answerBtnFalseTwo.disabled = true
-                    questionTxt.innerHTML = 'Your score is ' + scoreDisplay.innerHTML
-                    return
-                }
-            }
-
             const restartGame = () => {
                 restartBtn.onclick = function() {
 
